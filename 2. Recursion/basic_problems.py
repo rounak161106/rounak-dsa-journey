@@ -33,7 +33,22 @@ def backtrack_way2(i,n):
 
 
 
+def print_n_to_1(n):
+    if(n==0):
+        return
+    print(n)
+    print_n_to_1(n-1)
 
+def way2(i):
+    if(i==0):
+        return
+    way2(i-1)
+    print(i)
 
+def parameterized_sum(i,sum):
+    if(i<1):
+        print(sum)
+        return
+    parameterized_sum(i-1,sum+i)
 
-backtrack_way2(0,10)
+parameterized_sum(10,0)
