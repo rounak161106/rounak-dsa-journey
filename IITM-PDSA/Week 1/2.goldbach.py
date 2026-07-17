@@ -20,19 +20,19 @@ goldbach(26)
 ## for larger inputs this logic will not work, therefore we need a more efficient algo. 
 ## the idea is simple. we first find all the primes from 0 to n in a list marking the primes in the list as true and non primes as false and after maintaining the list, we check if they adds up to the given no.
 
-def findPrimePairs(n):
-    primes = [True] * (n+1)
-    primes[0] = primes[1] = False
-    for i in range(2, n+1):
-        if primes[i]:
-            for j in range(i*2, n+1, i):
-                primes[j] = False
+# def findPrimePairs(n):
+#     primes = [True] * (n+1)
+#     primes[0] = primes[1] = False
+#     for i in range(2, n+1):
+#         if primes[i]:
+#             for j in range(i*2, n+1, i):
+#                 primes[j] = False
     
-    result = []
-    for i in range(2, n//2 + 1):
-        if primes[i] and primes[n-i]:
-            result.append([i,n-i])  
-    print(result)
+#     result = []
+#     for i in range(2, n//2 + 1):
+#         if primes[i] and primes[n-i]:
+#             result.append([i,n-i])  
+#     print(result)
     
-findPrimePairs(52345146)
+# findPrimePairs(52345146)
 
