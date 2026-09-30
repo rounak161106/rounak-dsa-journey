@@ -3,7 +3,7 @@ import java.util.Stack;
 public class ValidParen{
     public static void main(String[] args){
         try{
-            System.out.println(match("((()()()"));
+            System.out.println(match("sga"));
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
@@ -22,7 +22,7 @@ public class ValidParen{
                 }
             }
             else{
-                throw new Exception("Invalid Character ");
+                throw new Exception("Invalid Character "+ch);
             }
         }
         if(stack.isEmpty()){
