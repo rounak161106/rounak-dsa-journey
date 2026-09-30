@@ -15,7 +15,7 @@ def goldbach(n):
             l.append((i,n-i))
     print(l)
 
-goldbach(26)
+goldbach(266)
 
 ## for larger inputs this logic will not work, therefore we need a more efficient algo. 
 ## the idea is simple. we first find all the primes from 0 to n in a list marking the primes in the list as true and non primes as false and after maintaining the list, we check if they adds up to the given no.
@@ -36,3 +36,4 @@ goldbach(26)
     
 # findPrimePairs(52345146)
 
+    
