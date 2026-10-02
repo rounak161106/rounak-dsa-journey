@@ -20,7 +20,7 @@ public class ReverseHalf {
         }
         int x = stack.pop();
         reverseSecondHalf(stack, n-1);
-        insert(stack, x, n);
+        insert(stack, x, n-1);
     }
     static void insert(Stack<Integer> stack, int ele, int n){
         if(n==0){

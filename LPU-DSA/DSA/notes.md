@@ -22,6 +22,19 @@ we have 2 different things, abstract data types and data structures. ADT are the
 - if we try to `push` or `pop` and completely filled or empty stack, we get `StackOverflowException` or `StackUnderflowException` resp.
 - stack is a class and not an interface in java.
 - to define we write : 
-stack<Integer> stack = new Stack();
-stack<String> stack = new Stack();
-stack<Person> stack = new Stack(); // if we have a class Person and want a stack of class person type
+``` java
+Stack<Integer> stack = new Stack();
+Stack<String> stack = new Stack();
+Stack<Person> stack = new Stack(); // if we have a class Person and want a stack of class person type
+```
+
+## Queues
+import java.util.LinkedList;
+import java.util.Queue;
+Queue<Integer> queue = new LinkedList<Integer>();
+queue.add(5);//throws exception if queue is already full
+queue.offer(5); // doesn't throw exception
+queue.element(); //peeks first element. throws exception if empty
+queue.peek(); // same but no exception, returns null instead
+queue.remove(); //removes the top element. throw exception 
+queue.poll(); //same thing as above but no exception instead null
