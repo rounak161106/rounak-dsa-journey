@@ -38,3 +38,11 @@ queue.element(); //peeks first element. throws exception if empty
 queue.peek(); // same but no exception, returns null instead
 queue.remove(); //removes the top element. throw exception 
 queue.poll(); //same thing as above but no exception instead null
+## Deque
+Deque<Integer> deque = new LinkedList<Integer>();
+addFirst(element) – It adds an element to the head of a Deque.
+removeFirst(element) – It removes an element from the head of a Deque.
+getFirst() – It returns the value of the first element of a Deque.
+addLast(element) – It adds an element to the end of a Deque.
+removeLast(element) – It removes an element from the end of a Deque.
+getLast() – It returns the value of the element from the end of the Deque.
