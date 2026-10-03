@@ -2,24 +2,16 @@ import java.util.Scanner;
 import java.util.Stack;
 public class Sort {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
-
         String line1 = scanner.nextLine();
-
         Stack<Integer> stack = new Stack<>();
-
         for (String elem : line1.split(" ")) {
             stack.push(Integer.parseInt(elem));
         }
-
         System.out.println("Before sorting : " + stack);
-        
         sort(stack);
-        
         System.out.println("Before sorting : " + stack);
     }
-
     public static void sort(Stack<Integer> stack){
         if(stack.isEmpty()){
             return;

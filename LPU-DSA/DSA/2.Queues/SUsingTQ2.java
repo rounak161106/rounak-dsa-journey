@@ -18,11 +18,11 @@ public class SUsingTQ {
             if(q1.isEmpty()){
                 break;
             }
-            q2.add(x);
-            Queue<Integer> q = q1; 
-            q1 = q2;
-            q2 = q;
+            q2.add(x);  
         }
+        Queue<Integer> q = q1; 
+        q1 = q2;
+        q2 = q;
         return x;
     }
 
