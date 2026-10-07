@@ -68,7 +68,7 @@ public class ReverseLinkedList {
     return;
     }
   for (int i = 0; i < n; i++) {
-   obj.push( in .next().charAt(0));
+   obj.push( in.next().charAt(0));
 
   }
 
@@ -77,7 +77,5 @@ public class ReverseLinkedList {
   // reverse
   Node temp = obj.reverse();
   obj.display(temp);
-
-
  }
 }

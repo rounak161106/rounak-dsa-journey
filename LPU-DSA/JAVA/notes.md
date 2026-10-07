@@ -204,3 +204,13 @@ String str = "Hello";
 for (char ch : str.toCharArray()) {
     System.out.println(ch);
 }
+
+## casting 
+if we try to cast a character value to integer, we get the ASCII value of that character.
+[0-9] -> 48-57
+spaces and punctuations : 32-64
+
+float holds value upto 6 wihle double to 17
+
+Precedence order
+! > && > ||
