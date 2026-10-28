@@ -189,21 +189,23 @@ This converts a string to an integer.
 
 
 Simpler usage of loops in collections.
-eg. 1
+```java
+// eg. 1
 String[] words = {"apple", "banana", "cherry"};
 for (String word : words) {
     System.out.println(word);
 }
-eg.2 
+// eg.2 
 int[] numbers = {10, 20, 30, 40};
 for (int num : numbers) {
     System.out.println(num);
 }
-eg. 3(widely used)
+// eg. 3(widely used)
 String str = "Hello";
 for (char ch : str.toCharArray()) {
     System.out.println(ch);
 }
+```
 
 ## casting 
 if we try to cast a character value to integer, we get the ASCII value of that character.

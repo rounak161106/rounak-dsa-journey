@@ -29,6 +29,7 @@ Stack<Person> stack = new Stack(); // if we have a class Person and want a stack
 ```
 
 ## Queues
+``` java
 import java.util.LinkedList;
 import java.util.Queue;
 Queue<Integer> queue = new LinkedList<Integer>();
@@ -38,7 +39,10 @@ queue.element(); //peeks first element. throws exception if empty
 queue.peek(); // same but no exception, returns null instead
 queue.remove(); //removes the top element. throw exception 
 queue.poll(); //same thing as above but no exception instead null
+```
+
 ## Deque
+``` java
 Deque<Integer> deque = new LinkedList<Integer>();
 addFirst(element) – It adds an element to the head of a Deque.
 removeFirst(element) – It removes an element from the head of a Deque.
@@ -46,3 +50,14 @@ getFirst() – It returns the value of the first element of a Deque.
 addLast(element) – It adds an element to the end of a Deque.
 removeLast(element) – It removes an element from the end of a Deque.
 getLast() – It returns the value of the element from the end of the Deque.
+```
+
+## Hashing
+2 ways to deal with collisions : 
+1. closed hashing or linear probing - move to empty slots if current one is occupied
+2. Open hashing or chaining - storing elements with same hash value as the elements of a linked list
+``` java
+// implementing : 
+Hashtable<Integer, String> myTable = new Hashtable<>();
+// usage : myTable.get(key), myTable.containsKey(key), myTable.put(key,value), myTable.remove(key), mytable.clear() which deletes all the enteries of the table
+``` 

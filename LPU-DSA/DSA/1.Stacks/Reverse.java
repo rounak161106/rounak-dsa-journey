@@ -36,5 +36,6 @@ public class Reverse {
         reverse(stack);
 
         System.out.println(stack);
+        scanner.close();
     }
 }
