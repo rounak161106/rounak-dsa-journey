@@ -1,4 +1,4 @@
-#This is an implace sorting and it is 
+#This is an inplace sorting and it is not stable
 
 arr = eval(input("Enter the list of numbers: "))
 print("Before Sorting :", arr)
