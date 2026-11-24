@@ -14,9 +14,8 @@ def quickSort(arr, left, right):
         i = partition(arr, left, right)
         quickSort(arr, left, i-1)
         quickSort(arr, i+1, right)
-    return arr
 
 arr = eval(input("Enter a list to sort : "))
 print("Before Sorting :",arr)
-res = quickSort(arr, 0, len(arr) - 1)
-print("After Sorting :",res)
+quickSort(arr, 0, len(arr) - 1)
+print("After Sorting :",arr)
